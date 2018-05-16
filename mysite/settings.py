@@ -79,7 +79,7 @@ WSGI_APPLICATION = 'mysite.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'server',
+        'NAME': 'library',
         'USER': 'root',
         'PASSWORD': 'kang',
         'HOST': 'localhost',
@@ -129,3 +129,5 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+
+LOGIN_REDIRECT_URL = '/'
