@@ -22,9 +22,10 @@ urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^main/',include('main.urls')),
     url(r'^book/',include('book_adm.urls')),
+    url(r'^login/',include('login.urls')),
     
     url(
-        r'^',
+        r'^$',
         auth_views.login,
         name='login',
         kwargs={
