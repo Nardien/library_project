@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+	<meta charset='UTF-8'>
+	<title>main</title>
+</head>
+<body>
+	<p align="right">
+	<form action="backtopage/" method="get" name="logout">
+		<button>logout</button>
+	</form><br>
+	<p align="center">
+	<button>checked-out books: 0<br/>late fee: 0</button>
+	<button>Seminar room reserved: 0</button>
+	 </p>
+	<h1 align="center">Welcom to KAIST library service</h1>
+	</p>
+	<div>
+		<form action="/main/search/" method="post" name='Bsearch'>
+		{% csrf_token %}
+		<input type="radio" name="ref" value="all" checked> all<br>
+		<input type="radio" name="ref" value="name"> book name
+
+		<input type="text" name='search' placeholder="search...">
+        <button name='choice' value='value'>Search</button><br>
+
+		<input type="radio" name="ref" value="author"> author<br>
+		</form>
+	</div>
+</body>
+</html>
