@@ -40,6 +40,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'home',
+    'main',
+    'book_adm',
 ]
 
 MIDDLEWARE = [
@@ -80,8 +82,8 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'library',
-        'USER': 'root',
-        'PASSWORD': 'kang',
+        'USER': 'library',
+        'PASSWORD': 'library',
         'HOST': 'localhost',
         'PORT': "",
         'OPTIONS' : {
